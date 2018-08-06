@@ -4,7 +4,7 @@ const
 
 router.get('/',
     function(req,res,next){
-        res.send('next function called')
+        res.render('index',{title: 'product'})
     }
 )
 
