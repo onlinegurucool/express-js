@@ -4,7 +4,11 @@ const
 
 router.get('/',
     function(req,res,next){
-        res.render('index',{title: 'product'})
+        var params = {
+            title: 'Product',
+            productCount: 20
+        }
+        res.render('product',params)
     }
 )
 
